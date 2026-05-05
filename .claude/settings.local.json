@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c ' *)",
+      "Bash(pip install *)",
+      "Read(//c/c/Users/drdan/Documents/Projetos Codex/Teste/public/Swap File/Fontes/**)",
+      "Bash(npm --version)",
+      "Bash(mkdir -p public/fonts public/logos public/fotos)",
+      "Bash(cp \"public/Swap File/Logos/Logotipo_Longo_Verde.png\" \"public/logos/logo-longo-verde.png\")",
+      "Bash(cp \"public/Swap File/Logos/Logotipo_Longo_Dourado.png\" \"public/logos/logo-longo-dourado.png\")",
+      "Bash(cp \"public/Swap File/Logos/Logotipo_Longo_Creme.png\" \"public/logos/logo-longo-creme.png\")",
+      "Bash(cp \"public/Swap File/Logos/Logotipo_Padrao_Verde.png\" \"public/logos/logo-padrao-verde.png\")",
+      "Bash(ls \"public/Swap File/Fontes/haboro-contrast-normal-bold-maisfontes.8b53/\")",
+      "Bash(ls \"public/Swap File/Fontes/haboro-contrast-normal-medium-maisfontes.a911/\")",
+      "Bash(ls \"public/Swap File/Fontes/haboro-contrast-normal-demi-maisfontes.9865/\")",
+      "Bash(cp \"public/Swap File/Fontes/haboro-contrast-normal-medium-maisfontes.a911/haboro-contrast-normal-medium.otf\" \"public/fonts/HaboroContrast-Medium.otf\")",
+      "Bash(cp \"public/Swap File/Fontes/haboro-contrast-normal-demi-maisfontes.9865/haboro-contrast-normal-demi.otf\" \"public/fonts/HaboroContrast-Demi.otf\")",
+      "Bash(cp \"public/Swap File/Fontes/haboro-contrast-normal-bold-maisfontes.8b53/haboro-contrast-normal-bold.otf\" \"public/fonts/HaboroContrast-Bold.otf\")",
+      "Bash(npm install *)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\\\\n\" http://localhost:61040/ -m 60)"
+    ]
+  }
+}

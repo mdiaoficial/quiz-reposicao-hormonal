@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Ivy Mode";
+  src: url("/fonts/IvyMode-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ivy Mode";
+  src: url("/fonts/IvyMode-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ivy Mode";
+  src: url("/fonts/IvyMode-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Haboro Contrast";
+  src: url("/fonts/HaboroContrast-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Haboro Contrast";
+  src: url("/fonts/HaboroContrast-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Haboro Contrast";
+  src: url("/fonts/HaboroContrast-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Haboro Contrast";
+  src: url("/fonts/HaboroContrast-Demi.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Haboro Contrast";
+  src: url("/fonts/HaboroContrast-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-ivy: "Ivy Mode";
+  --font-haboro: "Haboro Contrast";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F2E9DB;
+  color: #1a2a22;
+  font-family: var(--font-haboro), system-ui, sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-ivy), Georgia, serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-verde px-7 py-4 text-base font-medium text-creme shadow-lg shadow-verde/20 transition hover:bg-verde-dark hover:shadow-xl active:scale-[0.98];
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-verde px-7 py-4 text-base font-medium text-verde transition hover:bg-verde hover:text-creme active:scale-[0.98];
+  }
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-dourado px-7 py-4 text-base font-medium text-verde-dark shadow-lg shadow-dourado/30 transition hover:bg-dourado-dark hover:shadow-xl active:scale-[0.98];
+  }
+  .container-soft {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
+  }
+  .section-title {
+    @apply font-serif text-section text-verde-dark;
+  }
+  .lead {
+    @apply text-lg leading-relaxed text-carvao/80;
+  }
+}
